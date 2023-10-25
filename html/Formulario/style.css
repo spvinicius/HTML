@@ -1,15 +1,20 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: titulo;
+    src: url(fontes/bubblegum-sans-regular.otf);
+}
+
 *{
 margin: 0;
 padding: 0;
 border: 0;
 }
 body{
-    background-color: #f7f5f5;
+    background-color: #d1cbcb;
 }
 #interface{
-background-color: #fff;
+background-color: rgb(255, 251, 251);
 width: 1200px;
 margin: 0 auto;
 }
@@ -46,7 +51,7 @@ margin: 0 auto;
     padding: 5px 25px;
 }
 #menu li a:hover{
-    color: #0000ff;
+    color: #f50a0a;
     text-decoration: underline;
 }
 #banner-anime{
@@ -71,4 +76,179 @@ margin: 0 auto;
 }
 #anime1:hover, #anime2{
     opacity: 0;
+}
+h1{
+   font-family: titulo;
+   color:#fa0e0e;
+   font-size: 3em;
+   text-align: center;
+   margin: 15px;
+}
+#contato {
+    width: 1000px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+input,textarea,select{
+    font-size: 0.9em;
+    background: #f8f4f4;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#cCor{
+    background: none;
+    padding: 0px;
+}
+legend{
+    color: #f01010;
+    font-family: titulo;
+    font-size: 1.5em;
+    
+}
+fieldset{
+    border: 1px solid #0e0d0d;
+    padding: 15px;
+    margin-bottom: 30px;
+
+
+}
+#sexo{
+    width: 250px ;
+}
+#contato p{
+    padding: 5px;
+}
+#usuario{
+    background: url(img/icontato.png) no-repeat 95% 95%;
+}
+
+
+#endereco{
+    background: url(img/iendereco.png) no-repeat 95% 95%;
+}
+
+#mensagem{
+    background: url(img/imensagem.png) no-repeat 95% 95%;
+}
+
+#pedido{
+    background: url(img/ipgto.png) no-repeat 95% 95%;
+}
+.btn{
+    background: #f01010;
+    color: #0a0a0a;
+    font-size: 1.1em;
+    padding: 7px;
+    margin: 0px 5px 15px 5px;
+    border-radius: 10px;
+}
+#botao{
+    text-align: center;
+}
+#rodape{
+    border-top: #0a0a0a;
+    padding: 5px;
+}
+#rodape p{
+    text-align: center;
+    color: #0a0a0a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    margin: 10px 5px;
+}
+#rodape a{
+    text-decoration: none;
+}
+
+/*PÁGINA DE FOTO*/
+#galeria1 p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    padding: 5px 15px;
+}
+#album-fotos{
+    width: 696px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+}
+#album-fotos li{
+    float: left;
+    width: 198px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #999898;
+    background: #e91717;
+}
+#album-fotos li .galeria{
+    opacity: 0;
+    color: #0c0c0c;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    line-height: 370px;
+
+}
+#album-fotos li:hover .galeria{
+    opacity: 1;
+}
+#album-fotos li:hover{
+    transform: scale(1.5);
+}
+#album-fotos li.foto1{
+    background: url(img/galeria1.jpg)no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+#album-fotos li.foto1:hover{
+    background-position: 0%;
+    background-size: 200px 200px;
+}
+#album-fotos li.foto2{
+    background: url(img/galeria2.jpg)no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+#album-fotos li.foto2:hover{
+    background-position: 0%;
+    background-size: 200px 200px;
+}
+#album-fotos li.foto3{
+    background: url(img/galeria3.jpg)no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+#album-fotos li.foto3:hover{
+    background-position: 0%;
+    background-size: 200px 200px;
+}
+#album-fotos li.foto4{
+    background: url(img/galeria4.jpg)no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+#album-fotos li.foto4:hover{
+    background-position: 0%;
+    background-size: 200px 200px;
+}
+#album-fotos li.foto5{
+    background: url(img/galeria5.jpg)no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+#album-fotos li.foto5:hover{
+    background-position: 0%;
+    background-size: 200px 200px;
+}
+#album-fotos li.foto6{
+    background: url(img/galeria6.jpg)no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+#album-fotos li.foto6:hover{
+    background-position: 0%;
+    background-size: 200px 200px;
 }
