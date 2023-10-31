@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Fontes: 
+    Titulo: Quicksand
+    Texto: Josefin Sans
+
+    Cores:
+        #173261
+        #a9a9a9
+        #343538
+        #fff
+*/
+/*SMARTPHONE PORTAIT*/  
+@media (min-width: 576px){
+    
+}
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width: 576px){
+    body{
+        background: #106610;
+    }
+}
+/*TABLET PORTAIT*/
+@media (min-width: 768px){
+    body{
+        background: #ff0000;
+    }
+}
+/*TABLET LANDSCAPE*/
+@media (min-width: 992px){
+    body{
+        background: #101166;
+    }
+}
+/*PC*/
+@media (min-width: 1200px){
+    body{
+        background: #7e1062;
+    }
+}

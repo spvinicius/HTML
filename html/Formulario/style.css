@@ -6,17 +6,17 @@
 }
 
 *{
-margin: 0;
-padding: 0;
-border: 0;
-}
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
 body{
-    background-color: #d1cbcb;
-}
+    background-color: #f8f4f4;
+}   
 #interface{
-background-color: rgb(255, 251, 251);
-width: 1200px;
-margin: 0 auto;
+    background: rgb(248, 245, 245);
+    width: 1200px;
+    margin: 0 auto;
 }
 #topo{
     height: 70px;
@@ -31,29 +31,27 @@ margin: 0 auto;
     top: 20px;
     left: 900px;
 }
-#menu li{
-    float: left;
-}
 #menu ul{
     list-style: none;
     font-size: 1.2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0px;
-    padding:0px;
+    margin:  0px;
+    padding: 0px;
 }
 #menu li{
     float: left;
 }
 #menu li a{
-    color: #0a0a0a;
+    color:#f70606;
     text-decoration: none;
     margin: 0px;
     padding: 5px 25px;
 }
 #menu li a:hover{
-    color: #f50a0a;
+    color: #080808;
     text-decoration: underline;
 }
+
 #banner-anime{
     position: relative;
     display: inline-block;
@@ -61,84 +59,75 @@ margin: 0 auto;
     height: 350px;
     margin: 0px;
 }
-#anime1,#anime2{
+#anime1, #anime2{
     max-width: 100%;
     height: auto;
 }
 #banner-anime img{
-    position: absolute;
+    position:absolute;
     transition-property: opacity;
     transition-duration: 1s;
 }
 #anime1, #anime2:hover{
     opacity: 1;
-
 }
 #anime1:hover, #anime2{
     opacity: 0;
 }
 h1{
-   font-family: titulo;
-   color:#fa0e0e;
-   font-size: 3em;
-   text-align: center;
-   margin: 15px;
+    font-family: titulo;
+    color: #e42020;
+    font-size: 3em;
+    text-align: center;
+    margin: 15px;
 }
-#contato {
+#contato{
     width: 1000px;
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em;
 }
-input,textarea,select{
+input, textarea, select{
     font-size: 0.9em;
-    background: #f8f4f4;
+    background: #f5f2f2;
     border-radius: 5px;
     padding: 5px;
 }
-
 #cCor{
     background: none;
     padding: 0px;
 }
 legend{
-    color: #f01010;
+    color: #e60c0c;
     font-family: titulo;
     font-size: 1.5em;
-    
 }
 fieldset{
-    border: 1px solid #0e0d0d;
+    border: 1px solid #21215f;
     padding: 15px;
-    margin-bottom: 30px;
-
-
+    margin-bottom: 30px
 }
 #sexo{
-    width: 250px ;
+    width: 250px;
 }
 #contato p{
     padding: 5px;
 }
 #usuario{
-    background: url(img/icontato.png) no-repeat 95% 95%;
+    background: url(img/icontato.png)no-repeat 95% 95%;
 }
-
-
 #endereco{
-    background: url(img/iendereco.png) no-repeat 95% 95%;
+    background: url(img/iendereco.png)no-repeat 95% 95%;
 }
-
 #mensagem{
-    background: url(img/imensagem.png) no-repeat 95% 95%;
+    background: url(img/imensagem.png)no-repeat 95% 95%;
 }
-
 #pedido{
-    background: url(img/ipgto.png) no-repeat 95% 95%;
+    background: url(img/ipgto.png)no-repeat 95% 95%;
 }
 .btn{
-    background: #f01010;
-    color: #0a0a0a;
+    background: #f50a0a;
+    color: #fff;
     font-size: 1.1em;
     padding: 7px;
     margin: 0px 5px 15px 5px;
@@ -148,12 +137,13 @@ fieldset{
     text-align: center;
 }
 #rodape{
-    border-top: #0a0a0a;
+    border-radius: 2px solid #21215f;
     padding: 5px;
+    clear: both;
 }
 #rodape p{
     text-align: center;
-    color: #0a0a0a;
+    color: #21215f;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3em;
     margin: 10px 5px;
@@ -162,7 +152,7 @@ fieldset{
     text-decoration: none;
 }
 
-/*PÁGINA DE FOTO*/
+/*PÁGINAS DE FOTOS*/
 #galeria1 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
@@ -179,18 +169,17 @@ fieldset{
     width: 198px;
     height: 200px;
     margin: 10px;
-    border: 3px solid #999898;
-    background: #e91717;
+    border: 3px solid #21215f;
+    background: #f5f2f2;
 }
 #album-fotos li .galeria{
     opacity: 0;
-    color: #0c0c0c;
-    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5) ;
     font-size: 0.9em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
     line-height: 370px;
-
 }
 #album-fotos li:hover .galeria{
     opacity: 1;
@@ -204,7 +193,7 @@ fieldset{
     background-size: 700px 500px;
 }
 #album-fotos li.foto1:hover{
-    background-position: 0%;
+    background-position: 0% 0%;
     background-size: 200px 200px;
 }
 #album-fotos li.foto2{
@@ -213,7 +202,7 @@ fieldset{
     background-size: 700px 500px;
 }
 #album-fotos li.foto2:hover{
-    background-position: 0%;
+    background-position: 0% 0%;
     background-size: 200px 200px;
 }
 #album-fotos li.foto3{
@@ -222,7 +211,7 @@ fieldset{
     background-size: 700px 500px;
 }
 #album-fotos li.foto3:hover{
-    background-position: 0%;
+    background-position: 0% 0%;
     background-size: 200px 200px;
 }
 #album-fotos li.foto4{
@@ -231,7 +220,7 @@ fieldset{
     background-size: 700px 500px;
 }
 #album-fotos li.foto4:hover{
-    background-position: 0%;
+    background-position: 0% 0%;
     background-size: 200px 200px;
 }
 #album-fotos li.foto5{
@@ -240,7 +229,7 @@ fieldset{
     background-size: 700px 500px;
 }
 #album-fotos li.foto5:hover{
-    background-position: 0%;
+    background-position: 0% 0%;
     background-size: 200px 200px;
 }
 #album-fotos li.foto6{
@@ -249,6 +238,55 @@ fieldset{
     background-size: 700px 500px;
 }
 #album-fotos li.foto6:hover{
-    background-position: 0%;
+    background-position: 0% 0%;
     background-size: 200px 200px;
+}
+
+#galeria2{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+#galeria-foto{
+    list-style: none;
+    margin: 0 auto;
+}
+#galeria-foto li{
+    display: block;
+    float: left;
+    margin: 3px;
+    position: ralative;
+}
+#galeria-foto img{
+    background: #21215f;
+    padding: 5px;
+    width: 200px;
+    height: 165px;
+}
+.aumentar:hover{
+    transform: scale(1.5);
+    z-index:1
+}
+
+/*Pagina de Videos*/
+#radio-tv{
+    width: 900px;
+    height: 600px;
+    background: url(img/radio-tv.png) no-repeat;
+    margin: 5px auto;
+}
+#musica{
+    display: block;
+    position: relative;
+    width: 300px;
+    top: 490px;
+    left: 575px;
+}
+#filme{
+    display: block;
+    position: relative;
+    width: 459px;
+    top: 56px;
+    left: 77px;
+    border-radius: 15px;
 }
