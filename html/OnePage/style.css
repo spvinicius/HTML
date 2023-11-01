@@ -2,22 +2,107 @@
 
 /*Fontes: 
     Titulo: Quicksand
-    Texto: Josefin Sans
+    Texto: Josefin Sans*/
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-    Cores:
+ /* Cores:
         #173261
         #a9a9a9
         #343538
         #fff
 */
-/*SMARTPHONE PORTAIT*/  
-@media (min-width: 576px){
+:root{
+    --cor1: #f2f0f0;
+    --cor2: #a9a9a9;
+    --cor3: #343538;
+    --cor4: #fff;
+
+    --font-titulo: 'Quicksand', sans-serif;
+    --font-texto: 'Josefin Sans', sans-serif;
+
+}
+
+
+
+/*tira todas as margens*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: var(--font-texto);
+    font-size: 1.2em;
+}
+
+.container{
+    margin: 0 auto;
     
 }
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+/*SMARTPHONE PORTAIT*/  
+header{
+    height: 60px;
+}
+.logo img{
+    width: 128px;
+    height: 128px;
+}
+#check{
+    display: none;
+}
+label{
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+nav ul{
+    list-style: none;
+    background: var(--cor3);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+
+}
+#check:checked ~ ul{
+    right: 0;
+}
+nav ul li{
+    padding: 20px;
+    border-bottom:1px solid var(--cor1)
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+    
+
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width: 576px){
     body{
         background: #106610;
+    }
+    /*layout*/
+    .container{
+        max-width: 540px;
     }
 }
 /*TABLET PORTAIT*/
@@ -25,16 +110,55 @@
     body{
         background: #ff0000;
     }
+     /*layout*/
+     .container{
+        max-width: 720px;
+    }
 }
 /*TABLET LANDSCAPE*/
 @media (min-width: 992px){
     body{
         background: #101166;
     }
+     /*layout*/
+     .container{
+        max-width: 960px;
+    }
 }
 /*PC*/
 @media (min-width: 1200px){
     body{
         background: #7e1062;
+    }
+     /*layout*/
+     .container{
+        max-width: 1140px;
+    }
+    header{
+        height: 125px;
+    }
+    .logo img{
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    label{
+        display: none;
+
+    }
+    nav ul{
+        position: static;
+        height: auto;
+        margin: 50px;
+
+    }
+    nav ul li{
+        float: left;
+        border: 0;
+
+    }
+    nav ul li a:hover{
+        color: var(--cor4);
     }
 }
