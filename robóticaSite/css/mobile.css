@@ -71,3 +71,7 @@
 .gallery-image {
     width: 100%;
 }
+
+img{
+    max-width: 100%;
+}
